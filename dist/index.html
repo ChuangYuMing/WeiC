@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeiC中正大學技術分享會</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./assets/library/font-awesome-4.2.0/css/font-awesome.min.css">
+    <script src="./assets/library/queryloader2.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        new QueryLoader2(document.querySelector("body"), {
+            barColor: "#efefef",
+            backgroundColor: "#111",
+            percentage: true,
+            barHeight: 1,
+            minimumTime: 200,
+            fadeOutTime: 1000
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <section id="intro1">
+      <div class="intro-wrap">
+        <div class="header">
+          <div class="logo"></div>
+          <div class="menu"><a href="#intro2" data-target="intro2"><span class="item">執行摘要</span></a><a href="#intro3" data-target="intro3"><span class="item">活動流程</span></a><a href="#intro4" data-target="intro4"><span class="item">講者資訊</span></a><a href="#intro5" data-target="intro5"><span class="item">我要報名</span></a><a href="#intro6" data-target="intro6"><span class="item">其他資訊</span></a></div>
+        </div>
+      </div>
+    </section>
+    <section id="intro2">
+      <div class="intro-wrap">
+        <div class="program"><img src="./assets/images/program.png" width="550" height="380"></div>
+        <div class="summary">
+          <h2>執行摘要</h2>
+          <p>有鑑於中正的學生不容易參加技術社群活動，希望透過畢業學長姊回到母校做技術分享，來提升中正學生的視野以及學習風氣。</p><br>
+          <p>目標參予人數: 50人以上 <br>期許有效的提升大家對於網頁開發的興趣，並且這樣的技術活動可以一直延續下去!!</p>
+        </div>
+      </div>
+    </section>
+    <section id="intro3">
+      <div class="intro-wrap">
+        <div class="process">
+          <h2>活動流程</h2><img src="./assets/images/table.png" width="1200" height="390" class="table">
+        </div>
+      </div>
+    </section>
+    <section id="intro4">
+      <div class="intro-wrap">
+        <div class="subtitle">
+          <h2 class="ch">講者資訊</h2><br>
+          <h2 class="eng">SPEAKERS INFO</h2>
+        </div>
+        <div class="speakers"> <img src="./assets/images/people1.jpg" data-people="p1" width="300" height="240"><img src="./assets/images/people2.jpg" data-people="p2" width="300" height="240"><img src="./assets/images/people3.jpg" data-people="p3" width="300" height="240"><img src="./assets/images/people4.jpg" data-people="p4" width="300" height="240"></div>
+        <div class="speaker-info">
+          <div id="p1" class="people"><span>莊育銘</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p2" class="people"><span>林彥宇</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p3" class="people"><span>蕭奕凱</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p4" class="people"><span>何欣峰</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+        </div>
+      </div>
+    </section>
+    <section id="intro5">
+      <div class="intro-wrap"></div>
+    </section>
+    <section id="intro6">
+      <div class="intro-wrap"> 
+        <div class="scrollTop"><i class="fa fa-arrow-up fa-2x arrow-up"></i></div>
+        <div class="subtitle">
+          <h2 class="ch bb">其他資訊</h2>
+        </div>
+        <div class="info left"><span>
+            主辦人: 洪名辰、莊育銘、劉峻豪<br>
+            協辦單位: 中正資管系辦</span></div>
+        <div class="info tac"><i class="fa fa-phone fa-2x"></i><br><span>0933299858</span></div>
+        <div class="info tac"><i class="fa fa-envelope fa-2x"></i><br><span>s6323859@gmail.com</span></div>
+      </div>
+    </section>
+    <footer>
+      <P>
+         
+        Copyright(C) BuDin All rights reserved
+      </P>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./assets/library/jquery-backstretch.js"></script>
+    <script>
+      $(document).ready(function () {
+        // You may also attach Backstretch to a block-level element
+        $("#intro1").backstretch("./assets/images/banner1.jpg");
+        $("#intro5").backstretch("./assets/images/bg3.jpg");
+      
+        $(".scrollTop").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });        
+      
+       
+        $('.menu a').click(function (event) {
+            event.stopPropagation();                
+            var idTo = $(this).data('target');                
+            var Position = $('#'+idTo).offset().top;
+            console.log(Position);
+            $('html, body').animate({ scrollTop: Position }, 'slow');
+            return false;
+        });
+        
+        $('.people').hover(function(){
+            $(this).addClass('show-people');
+          },function(){
+            $(this).removeClass('show-people');
+          })
+      
+      });
+    </script>
+  </body>
+</html>

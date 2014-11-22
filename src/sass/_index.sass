@@ -1,0 +1,156 @@
+*
+	+box-sizing(border-box)
+body
+	line-height: $line-height
+	font-size: $font-size
+	font-family: $font-family
+	background-color: $c-background
+h2
+	display: inline-block
+	font-weight: bold
+#intro1, #intro5
+	width: 100%
+	height: 100%
+	// background-image: url('../assets/images/banner1.jpg') 
+#intro2
+	height: 495px
+	background-image: url('../assets/images/bg.jpg') 
+	background-repeat: repeat-x
+
+#intro3
+	height: 517px
+	background-image: url('../assets/images/bg2.jpg') 
+	background-repeat: repeat-x
+#intro4
+	height: 455px
+#intro6
+	height: 350px
+.intro-wrap
+	height: 100%
+	position: relative
+	width: $base-width
+	margin: 0 auto
+	@extend %clearfix
+.header
+	position: relative
+.logo
+	position: absolute
+	top: 0px
+	left: 0px
+	display: inline-block
+	width: 150px
+	height: 95px
+	background-image: url('../assets/images/icon.png')
+.menu
+	position: absolute
+	top: 45px
+	right: 0px
+	display: inline-block
+	.item
+		color: $black
+		margin-right: 40px
+		padding-bottom: 5px
+		&:hover
+			color: $c-lighten-black
+			border-bottom: solid 2px $c-lighten-black
+.program
+	position: relative
+	width: 50%
+	height: 100%
+	float: left
+	img
+		position: absolute
+		bottom: 0px
+		left: 0px
+.summary
+	position: absolute
+	right: 0px
+	width: 50%
+	margin-top: 130px
+	color: $white
+	float: right
+	h2
+		border-bottom: solid 2px $white
+.process 
+	position: relative 
+	height: 100%
+	h2
+		border-bottom: solid 2px $black
+		margin-top: 90px
+.table
+	position: absolute
+	bottom: 0px
+	left: 0px
+
+.subtitle
+	margin: 55px 0 auto
+	text-align: center
+	.ch 
+		font-family: $font-family
+		color: $black
+	.eng
+		font-family: $font-family-eng
+		color: $white
+.speakers
+	position: absolute
+	bottom: 0px
+	margin: 0 auto
+	img
+		vertical-align: bottom
+.speaker-info
+	position: absolute
+	bottom: 0px
+	margin: 0 auto
+.people
+	display: inline-block
+	width: 300px
+	height: 240px
+	background-color: $c-labelBackground
+	float: left
+	text-align: center
+	padding-top: 40px
+	color: $white
+	opacity: 0
+	+transition(0.3s)
+	span
+		border-bottom: solid 2px $white
+.show-people
+	opacity: 1
+.info
+	width: 33.333%
+	float: left
+	color: $c-grey
+	margin-top: 55px
+.scrollTop
+	position: relative
+	top: -25px
+	left: 570px
+	width: 50px
+	height: 50px
+	cursor: pointer
+	background-color: $black
+	+border-radius(25px)
+	+transition(0.3s)
+	&:hover
+		background-color: $white
+	&:hover>i 
+		color: $black
+
+.arrow-up
+	position: absolute
+	top: 3px
+	left: 7px
+	color: $white
+	+transition(0.3s)
+.bb
+	border-bottom: solid 2px $black
+.tac 
+	text-align: center
+footer
+	height: 55px
+	background-color: $black
+	text-align: center
+	color: $white
+	font-size: 16px
+	padding-top: 5px
+	font-family: Arial

@@ -1,0 +1,30 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "description": "react",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.5.8",
+    "gulp-changed": "^1.0.0",
+    "gulp-compass": "^2.0.1",
+    "gulp-jade": "^0.9.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-replace": "^0.4.0",
+    "gulp-util": "^3.0.1"
+  },
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Yu-Ming Chuang",
+  "license": "NO"
+}
