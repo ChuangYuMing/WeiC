@@ -56,19 +56,24 @@
         </div>
         <div class="speakers"> <img src="./assets/images/people1.jpg" data-people="p1" width="300" height="240"><img src="./assets/images/people2.jpg" data-people="p2" width="300" height="240"><img src="./assets/images/people3.jpg" data-people="p3" width="300" height="240"><img src="./assets/images/people4.jpg" data-people="p4" width="300" height="240"></div>
         <div class="speaker-info">
-          <div id="p1" class="people"><span>莊育銘</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
-          <div id="p2" class="people"><span>林彥宇</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
-          <div id="p3" class="people"><span>蕭奕凱</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
-          <div id="p4" class="people"><span>何欣峰</span><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p1" class="people"><span>莊育銘</span><br><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p2" class="people"><span>林彥宇</span><br><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p3" class="people"><span>蕭奕凱</span><br><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
+          <div id="p4" class="people"><span>何欣峰</span><br><br>中正大學資管系<br>擁有專案、程式設計經驗</div>
         </div>
       </div>
     </section>
     <section id="intro5">
-      <div class="intro-wrap"></div>
+      <div class="intro-wrap">
+        <div class="sign-up">
+          <div class="active-info"><span>時間: 12/13</span><span>價錢: $Free</span><br><span>地點: 中正大學活動中心136階梯教室</span></div><a href="http://harry1123-a4338f.kktix.cc/events/weic" target="_blank" class="link-wrap">
+            <div class="link-btn"><i class="fa fa-arrow-circle-o-right"></i><span>我要報名</span></div></a>
+        </div>
+      </div>
     </section>
     <section id="intro6">
       <div class="intro-wrap"> 
-        <div class="scrollTop"><i class="fa fa-arrow-up fa-2x arrow-up"></i></div>
+        <div class="scrollTop"><img src="./assets/images/arrow.png" class="arrow-up"></div>
         <div class="subtitle">
           <h2 class="ch bb">其他資訊</h2>
         </div>
@@ -91,7 +96,7 @@
       $(document).ready(function () {
         // You may also attach Backstretch to a block-level element
         $("#intro1").backstretch("./assets/images/banner1.jpg");
-        $("#intro5").backstretch("./assets/images/bg3.jpg");
+        $("#intro5").backstretch("./assets/images/banner2.jpg");
       
         $(".scrollTop").click(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
