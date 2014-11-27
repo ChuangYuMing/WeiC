@@ -50,9 +50,10 @@ h2
 		color: $black
 		margin-right: 40px
 		padding-bottom: 5px
+		font-size: 16px
 		&:hover
-			color: $c-lighten-black
-			border-bottom: solid 2px $c-lighten-black
+			color: #2e6eb0
+			border-bottom: solid 2px #2e6eb0
 .program
 	position: relative
 	width: 50%
@@ -102,6 +103,7 @@ h2
 	bottom: 0px
 	margin: 0 auto
 .people
+	font-size: 16px
 	display: inline-block
 	width: 300px
 	height: 240px
@@ -113,14 +115,44 @@ h2
 	opacity: 0
 	+transition(0.3s)
 	span
+		font-size: $font-size
 		border-bottom: solid 2px $white
 .show-people
 	opacity: 1
+.sign-up
+	position: absolute
+	top: 40%
+	left: 50%
+	+transform(translate(-50%, -50%))
+.active-info
+	font-size: 25px
+	line-height: 45px
+	color: $white
+.link-wrap
+	display: block
+	border: solid 2px $white
+	width: 500px
+	margin-left: -50px
+	margin-top: 30px
+	text-align: center
+	+border-radius(15px)
+	+transition(0.3s)
+
+.link-btn
+	font-size: 30px
+	display: inline-block
+	padding: 20px 10px
+	color: $white
+	i 
+		padding-right: 15px
+		font-size: 30px
+
 .info
 	width: 33.333%
 	float: left
-	color: $c-grey
+	color: $c-dark-grey
 	margin-top: 55px
+	font-size: 16px
 .scrollTop
 	position: relative
 	top: -25px
@@ -132,16 +164,16 @@ h2
 	+border-radius(25px)
 	+transition(0.3s)
 	&:hover
-		background-color: $white
+		background-color: $c-grey
 	&:hover>i 
 		color: $black
 
 .arrow-up
 	position: absolute
-	top: 3px
-	left: 7px
-	color: $white
-	+transition(0.3s)
+	top: 6px
+	left: 11px
+	width: 50%
+
 .bb
 	border-bottom: solid 2px $black
 .tac 

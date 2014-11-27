@@ -68,25 +68,40 @@ html(lang='zh-Hant-TW')
           #p1.people
             span 莊育銘
             br
+            br
             | 中正大學資管系<br>擁有專案、程式設計經驗
           #p2.people
             span 林彥宇
+            br
             br
             | 中正大學資管系<br>擁有專案、程式設計經驗
           #p3.people
             span 蕭奕凱
             br
+            br
             | 中正大學資管系<br>擁有專案、程式設計經驗
           #p4.people
             span 何欣峰
             br
+            br
             | 中正大學資管系<br>擁有專案、程式設計經驗
     section#intro5
       .intro-wrap
+        .sign-up
+          .active-info
+            span 時間: 12/13
+            span 價錢: $Free
+            br
+            span 地點: 中正大學活動中心136階梯教室
+          a.link-wrap(href='http://harry1123-a4338f.kktix.cc/events/weic' target='_blank')
+            .link-btn
+              i.fa.fa-arrow-circle-o-right
+              span 我要報名
+
     section#intro6
       .intro-wrap 
         .scrollTop
-          i.fa.fa-arrow-up.fa-2x.arrow-up
+          img.arrow-up(src='./assets/images/arrow.png')
         .subtitle
           h2.ch.bb 其他資訊
         .info.left
@@ -112,7 +127,7 @@ html(lang='zh-Hant-TW')
       $(document).ready(function () {
         // You may also attach Backstretch to a block-level element
         $("#intro1").backstretch("./assets/images/banner1.jpg");
-        $("#intro5").backstretch("./assets/images/bg3.jpg");
+        $("#intro5").backstretch("./assets/images/banner2.jpg");
 
         $(".scrollTop").click(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
