@@ -5,6 +5,13 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="http://chuangyuming.github.io/WeiC/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WeiC中正大學技術分享會">
+    <meta name="og:description" content="有鑑於中正的學生不容易參加技術社群活動，希望透過畢業學長姊回到母校做技術分享，來提升中正學生的視野以及學習風氣。">
+    <meta property="og:image" content="http://chuangyuming.github.io/WeiC/assets/images/icon.png">
+    <meta property="fb:admins" content="100001564052214">
+    <meta property="fb:app_id" content="1546177692293370">
     <title>WeiC中正大學技術分享會</title>
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./assets/library/font-awesome-4.2.0/css/font-awesome.min.css">
@@ -24,7 +31,7 @@
   </head>
   <body>
     <section id="intro1">
-      <div class="intro-wrap">
+      <div class="intro-wrap bg1">
         <div class="header">
           <div class="logo"></div>
           <div class="menu"><a href="#intro2" data-target="intro2"><span class="item">執行摘要</span></a><a href="#intro3" data-target="intro3"><span class="item">活動流程</span></a><a href="#intro4" data-target="intro4"><span class="item">講者資訊</span></a><a href="#intro5" data-target="intro5"><span class="item">我要報名</span></a><a href="#intro6" data-target="intro6"><span class="item">其他資訊</span></a></div>
@@ -32,7 +39,7 @@
       </div>
     </section>
     <section id="intro2">
-      <div class="intro-wrap">
+      <div class="intro-wrap bg2">
         <div class="program"><img src="./assets/images/program.png" width="550" height="380"></div>
         <div class="summary">
           <h3>執行摘要</h3>
@@ -42,7 +49,7 @@
       </div>
     </section>
     <section id="intro3">
-      <div class="intro-wrap">
+      <div class="intro-wrap bg3">
         <div class="process">
           <h3>活動流程</h3><img src="./assets/images/table.png" width="1200" height="390" class="table">
         </div>
@@ -64,7 +71,7 @@
       </div>
     </section>
     <section id="intro5">
-      <div class="intro-wrap">
+      <div class="intro-wrap bg5">
         <div class="sign-up">
           <div class="active-info"><span>時間: 12/13</span><span>價錢: $Free</span><br><span>地點: 中正大學活動中心136階梯教室</span></div><a href="http://weic.kktix.cc/events/weic2014" target="_blank" class="link-wrap">
             <div class="link-btn"><i class="fa fa-arrow-circle-o-right"></i><span>我要報名</span></div></a>
@@ -84,20 +91,28 @@
         <div class="info tac"><i class="fa fa-envelope fa-2x"></i><br><span>s6323859@gmail.com</span></div>
       </div>
     </section>
-    <footer>
-      <P>
-         
-        Copyright(C) BuDin All rights reserved
-      </P>
-    </footer>
+    <section id="intro7">
+      <div class="intro-wrap bg7">
+        <P>
+           
+          Copyright(C) BuDin All rights reserved
+        </P>
+      </div>
+    </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./assets/library/jquery-backstretch.js"></script>
     <script>
       $(document).ready(function () {
         // You may also attach Backstretch to a block-level element
-        $("#intro1").backstretch("./assets/images/banner1.jpg");
-        $("#intro5").backstretch("./assets/images/banner2.jpg");
-      
+        if(document.body.clientWidth < 1200){
+          $(".bg1").backstretch("./assets/images/banner1.jpg");
+          $(".bg5").backstretch("./assets/images/banner2.jpg");
+        }
+        else{
+          $("#intro1").backstretch("./assets/images/banner1.jpg");
+          $("#intro5").backstretch("./assets/images/banner2.jpg");
+        }
+        
         $(".scrollTop").click(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
